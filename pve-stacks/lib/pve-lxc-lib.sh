@@ -20,7 +20,7 @@ pve_ct_ensure_started() {
 pve_normalize_ip() { echo "$1"; }
 
 pve_ct_create_privileged() {
-  pct create "$1" "$12" --hostname "$2" --storage "$3" --rootfs "$3:$4" \
+  pct create "$1" "${12}" --hostname "$2" --storage "$3" --rootfs "$3:$4" \
     --memory "$5" --swap "$6" --cores "$7" \
     --net0 "name=eth0,bridge=$8,ip=$9" \
     --unprivileged 0 --features nesting=1,keyctl=1
