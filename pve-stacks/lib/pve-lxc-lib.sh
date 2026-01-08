@@ -133,7 +133,7 @@ pve_ct_create_privileged() {
   pve_storage_exists "$storage" || die "Storage '$storage' not found"
   maxkeys_check
 
-  local net0="name=eth0,bridge=${bridge},ip=${ip_cidr},dns=${dns}"
+  local net0="name=eth0,bridge=${bridge},ip=${ip_cidr}"
   [[ -n "$gateway" && "$ip_cidr" != "dhcp" ]] && net0="${net0},gw=${gateway}"
 
   log "Creating CT $ct ($hostname) using template $ostemplate"
