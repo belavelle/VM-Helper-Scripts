@@ -9,7 +9,7 @@ This script is meant to be run as a user not root which is why it's called with 
 Install Docker
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/belavelle/VM-Helper-Scripts/refs/heads/main/install_docker_deb.sh)"
 
-PVE Stacks - Added to create LXC containers for Proxmox.  This environment is very extenable which I will plan to add other services in the future.
+PVE Stacks - Has been removed from this repo and placed in it's own dedicated repository
 
 Install Xmrig
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/belavelle/VM-Helper-Scripts/refs/heads/main/install_xmrig.sh)"
